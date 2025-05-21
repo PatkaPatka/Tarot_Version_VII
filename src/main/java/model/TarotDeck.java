@@ -4,90 +4,27 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.io.InputStream;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TarotDeck {
     private List<TarotCard> cards;
     private List<TarotCard> drawnCards;
 
     public TarotDeck(){
-        initializeDeck();
+        loadDeckfromJson();
         drawnCards = new ArrayList<>();
     }
 
-    private void initializeDeck(){
-        cards = new ArrayList<>();
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resource/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
-        cards.add(new TarotCard("The Fool", "New Beginning, Innocence, Spontaneity", "Recklessness, Fearlessness, Risks", "/resources/The Fool upright.png"));
+    private void loadDeckfromJson(){
+        ObjectMapper mapper = new ObjectMapper();
+        try (InputStream is = getClass().getClassLoader().getResourceAsStream("tarot_deck.json"))
+        {
+            cards = mapper.readValue(is, new TypeReference<List<TarotCard>>() {});
+        } catch (Exception e) {
+            e.printStackTrace();
+            cards = new ArrayList<>();
+        }
     }
 }

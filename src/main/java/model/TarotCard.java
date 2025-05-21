@@ -1,24 +1,14 @@
 package model;
 
 public class TarotCard {
-    private final String name;
-    private final String uprightMeaning;
-    private final String reversedMeaning;
-    private final String imagePath;
-    private boolean isReversed;
+    private String name;
+    private String Meaning;
+    private String imagePath;
 
-    public TarotCard(String name, String uprightMeaning, String reversedMeaning, String imagePath) {
-        this.name = name;
-        this.uprightMeaning = uprightMeaning;
-        this.reversedMeaning = reversedMeaning;
-        this.imagePath = imagePath;
-        this.isReversed = false; // Default: card starts upright
-    }
+    public TarotCard() {}
 
     // Getters and setters
     public String getName() { return name; }
-    public String getMeaning() { return isReversed ? reversedMeaning : uprightMeaning; }
+    public String getMeaning() {return Meaning; }
     public String getImagePath() { return imagePath; }
-    public boolean isReversed() { return isReversed; }
-    public void setReversed(boolean reversed) { isReversed = reversed; }
 }
