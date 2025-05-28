@@ -5,10 +5,56 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.MainView"
-            prefHeight="400.0" prefWidth="600.0">
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="view.MainView"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
 
-</AnchorPane>
+<!--</AnchorPane>-->
+
+<?import java.net.URL?>
+<?import javafx.scene.shape.Circle?>
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <stylesheets>
+        <URL value="@Style.css"/>
+    </stylesheets>
+
+    <HBox styleClass="window-controls">
+        <Circle fx:id="closeBtn" fill="red" radius="10.0" onMouseClicked="#handleClose"/>
+        <Circle fx:id="minimizeBtn" fill="yellow" radius="10.0" onMouseClicked="#handleMinimize"/>
+        <Circle fx:id="hideBtn" fill="green" radius="10.0" onMouseClicked="#handleHide"/>
+    </HBox>
+
+    <VBox styleClass="main-content">
+        <HBox styleClass="mode-display">
+            <Label fx:id="time1Label" text="mode I" styleClass="mode-label"/>
+            <Label fx:id="time2Label" text="mode II" styleClass="mode-label"/>
+            <Label fx:id="time3Label" text="mode III" styleClass="mode-label"/>
+        </HBox>
+        <HBox styleClass="card-display">
+            <VBox styleClass="card-slot">
+                <ImageView fx:id="card1Image" styleClass="card-image"/>
+                <Label fx:id="meaning1Label" styleClass="meaning-label"/>
+            </VBox>
+            <VBox styleClass="card-slot">
+                <ImageView fx:id="card2Image" styleClass="card-image"/>
+                <Label fx:id="meaning2Label" styleClass="meaning-label"/>
+            </VBox>
+            <VBox styleClass="card-slot">
+                <ImageView fx:id="card3Image" styleClass="card-image"/>
+                <Label fx:id="meaning3Label" styleClass="meaning-label"/>
+            </VBox>
+        </HBox>
+
+        <HBox styleClass="controls">
+            <Button fx:id="modeBtn" text="mode" onAction="#handleModeChange" styleClass="control-btn"/>
+            <Button fx:id="shuffleBtn" text="shuffle" onAction="#handleShuffle" styleClass="control-btn"/>
+            <Button fx:id="openBtn" text="open" onAction="#handleOpen" styleClass="control-btn"/>
+            <Button fx:id="helpBtn" text="How to Play" onAction="#showHelp" styleClass="control-btn"/>
+        </HBox>
+    </VBox>
+</VBox>

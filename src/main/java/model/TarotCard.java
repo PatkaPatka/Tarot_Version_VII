@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Collections;
+
 public class TarotCard {
     private String name;
     private String Meaning;

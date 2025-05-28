@@ -27,4 +27,11 @@ public class TarotDeck {
             cards = new ArrayList<>();
         }
     }
+
+    public void shuffle() {
+        Collections.shuffle(cards);
+    }
+    public List<TarotCard> drawSpread(int count) {
+        return new ArrayList<>(cards.subList(0, count));
+    }
 }
