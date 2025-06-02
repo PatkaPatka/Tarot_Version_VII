@@ -7,12 +7,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.io.IOException;
-
 public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MainView.fxml"));
+        java.net.URL url = getClass().getResource("/view/MainView.fxml");
+        FXMLLoader loader = new FXMLLoader(url);
         Parent root = loader.load();
 
         Scene scene = new Scene(root, 800, 600);

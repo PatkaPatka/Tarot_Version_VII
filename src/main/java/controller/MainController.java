@@ -12,15 +12,15 @@ import javafx.scene.layout.VBox;
 import java.util.List;
 
 public class MainController {
-    @FXML private Circle closeBtn, minimizeBtn, hideBtn;
-    @FXML private Label time1Label, time2Label, time3Label;
-    @FXML private Label meaning1Label, meaning2Label, meaning3Label;
-    @FXML private ImageView card1Image, card2Image, card3Image;
-    @FXML private Button modeBtn, shuffleBtn, openBtn, helpBtn;
+    @FXML public Circle closeBtn, minimizeBtn, hideBtn;
+    @FXML public Label time1Label, time2Label, time3Label;
+    @FXML public Label meaning1Label, meaning2Label, meaning3Label;
+    @FXML public ImageView card1Image, card2Image, card3Image;
+    @FXML public Button modeBtn, shuffleBtn, openBtn, helpBtn;
 
-    private TarotDeck tarotDeck;
-    private ReadingMode currentMode;
-    private List<TarotCard> currentSpread;
+    public TarotDeck tarotDeck;
+    public ReadingMode currentMode;
+    public List<TarotCard> currentSpread;
 
     public void Initialize() {
         tarotDeck = new TarotDeck();
@@ -33,12 +33,12 @@ public class MainController {
         card3Image.setImage(cardBack);
     }
     @FXML
-    private void handleModeChange() {
+    public void handleModeChange() {
         ReadingMode[] modes = ReadingMode.values();
         currentMode = modes[(currentMode.ordinal() + 1) % modes.length];
         updateModeLabels();
     }
-    private void updateModeLabels() {
+    public void updateModeLabels() {
         String[] positions = currentMode.getPositions();
         time1Label.setText(positions[0]);
         time2Label.setText(positions[1]);
@@ -46,7 +46,7 @@ public class MainController {
     }
 
     @FXML
-    private void handleShuffle() {
+    public void handleShuffle() {
         tarotDeck.shuffle();
         Image card_back = new Image(getClass().getResourceAsStream("/images/resource/card_back.jpg"));
         card1Image.setImage(card_back);
@@ -58,7 +58,7 @@ public class MainController {
     }
 
     @FXML
-    private void handleOpenCards() {
+    public void handleOpen() {
         currentSpread = tarotDeck.drawSpread(3);
 
         displayCard(card1Image, meaning1Label, currentSpread.get(0));
@@ -66,14 +66,14 @@ public class MainController {
         displayCard(card3Image, meaning3Label, currentSpread.get(2));
     }
 
-    private void displayCard(ImageView imageView, Label meaningLabel, TarotCard card) {
+    public void displayCard(ImageView imageView, Label meaningLabel, TarotCard card) {
         Image image = new Image(getClass().getResourceAsStream(card.getImagePath()));
         imageView.setImage(image);
         meaningLabel.setText(card.getName() + ": " + card.getMeaning());
     }
 
     @FXML
-    private void showHelp() {
+    public void showHelp() {
         Stage helpStage = new Stage();
         VBox root = new VBox();
         root.setSpacing(10);
@@ -105,17 +105,17 @@ public class MainController {
     }
 
     @FXML
-    private void handleClose() {
+    public void handleClose() {
         ((Stage) closeBtn.getScene().getWindow()).close();
     }
 
     @FXML
-    private void handleMinimize() {
+    public void handleMinimize() {
         ((Stage) minimizeBtn.getScene().getWindow()).setIconified(true);
     }
 
     @FXML
-    private void handleHide() {
+    public void handleHide() {
         ((Stage) hideBtn.getScene().getWindow()).setIconified(true);
         ((Stage) hideBtn.getScene().getWindow()).hide();
     }
