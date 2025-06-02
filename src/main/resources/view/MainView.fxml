@@ -26,7 +26,7 @@
     <HBox styleClass="window-controls">
         <Circle fx:id="closeBtn" fill="red" radius="10.0" onMouseClicked="#handleClose"/>
         <Circle fx:id="minimizeBtn" fill="yellow" radius="10.0" onMouseClicked="#handleMinimize"/>
-        <Circle fx:id="hideBtn" fill="green" radius="10.0" onMouseClicked="#handleHide"/>
+        <Circle fx:id="hideBtn" fill="green" radius="10.0" onMouseClicked="#handleMaximize"/>
     </HBox>
 
     <VBox styleClass="main-content">

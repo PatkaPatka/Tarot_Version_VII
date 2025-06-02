@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import java.util.List;
 
 public class MainController {
-    @FXML public Circle closeBtn, minimizeBtn, hideBtn;
+    @FXML public Circle closeBtn, minimizeBtn, maximizeBtn;
     @FXML public Label time1Label, time2Label, time3Label;
     @FXML public Label meaning1Label, meaning2Label, meaning3Label;
     @FXML public ImageView card1Image, card2Image, card3Image;
@@ -22,7 +22,7 @@ public class MainController {
     public ReadingMode currentMode;
     public List<TarotCard> currentSpread;
 
-    public void Initialize() {
+    public void initialize() {
         tarotDeck = new TarotDeck();
         currentMode = ReadingMode.past_present_future;
         updateModeLabels();
@@ -31,6 +31,12 @@ public class MainController {
         card1Image.setImage(cardBack);
         card2Image.setImage(cardBack);
         card3Image.setImage(cardBack);
+        card1Image.setFitHeight(200);
+        card1Image.setFitWidth(125);
+        card2Image.setFitHeight(200);
+        card2Image.setFitWidth(125);
+        card3Image.setFitHeight(200);
+        card3Image.setFitWidth(125);
     }
     @FXML
     public void handleModeChange() {
@@ -83,18 +89,18 @@ public class MainController {
         helpText.setEditable(false);
         helpText.setWrapText(true);
         helpText.setText("How to play:\n\n" +
-                "1. Wählen Sie zunächst einen Modus, klicken Sie auf die Schaltfläche \"Modus\", um den Modus zu ändern\n" +
+                "1. Wählen Sie zunächst einen Modus, klicken Sie auf die Schaltfläche \"mode\", um den Modus zu ändern\n" +
                 "Vergangenheit, Gegenwart, Zukunft\n" +
                 "Du, Sie, Beziehung\n" +
                 "Situation, Hindernis, Lösung\n" +
                 "Geist, Körper, Seele\n" +
                 "Pfad I, Pfad II, Pfad III\n" +
                 "Akzeptieren, Annehmen, Loslassen\n\n" +
-                "2. Mischen Sie die Karten (klicken Sie auf die Schaltfläche \"Mischen\").\n" +
-                "3. Öffnen Sie die Karten (klicken Sie auf die Schaltfläche \"Öffnen\").\n" +
+                "2. Mischen Sie die Karten (klicken Sie auf die Schaltfläche \"shuffle\").\n\n" +
+                "3. Öffnen Sie die Karten (klicken Sie auf die Schaltfläche \"open\").\n\n" +
                 "4. Deuten Sie die Karten.\n\n");
 
-        Button closeBtn = new Button("Close");
+        Button closeBtn = new Button("Schließen");
         closeBtn.setOnAction(e -> helpStage.close());
 
         root.getChildren().addAll(helpText, closeBtn);
@@ -115,8 +121,5 @@ public class MainController {
     }
 
     @FXML
-    public void handleHide() {
-        ((Stage) hideBtn.getScene().getWindow()).setIconified(true);
-        ((Stage) hideBtn.getScene().getWindow()).hide();
-    }
+    public void handleMaximize() {((Stage) maximizeBtn.getScene().getWindow()).setMaximized(true);}
 }

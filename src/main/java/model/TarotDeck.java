@@ -32,6 +32,6 @@ public class TarotDeck {
         Collections.shuffle(cards);
     }
     public List<TarotCard> drawSpread(int count) {
-        return new ArrayList<>(cards.subList(0, count));
+        return new ArrayList<>(cards.subList(0, 3));
     }
 }
