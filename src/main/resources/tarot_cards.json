@@ -2,781 +2,470 @@
   {
     "name": "The Fool",
     "description": "Neubeginn, Unschuld, Spontaneität",
+    "description_reversed": "Rücksichtslosigkeit, Furchtlosigkeit, Risiken",
     "image": "/images/resource/The Fool upright.png"
-  },
-  {
-    "name": "The Fool reversed",
-    "description": "Rücksichtslosigkeit, Furchtlosigkeit, Risiken",
-    "image": "/images/resource/The Fool reversed.png"
   },
   {
     "name": "The Magician",
     "description": "Schöpfung, Stärke, Klarheit",
+    "description_reversed": "Dunkle Mächte, Manipulation, Narzissmus",
     "image": "/images/resource/The Magician upright.png"
-  },
-  {
-    "name": "The Magician reversed",
-    "description": "Dunkle Mächte, Manipulation, Narzissmus",
-    "image": "/images/resource/The Magician reversed.png"
   },
   {
     "name": "The High Priestess",
     "description": "Intuition, göttliche Wahrheit, Sensibilität",
+    "description_reversed": "Schaden, Geheimnisse, verborgene Agenda",
     "image": "/images/resource/High Priestess upright.png"
-  },
-  {
-    "name": "The High Priestess reversed",
-    "description": "Schaden, Geheimnisse, verborgene Agenda",
-    "image": "/images/resource/High Priestess reversed.png"
   },
   {
     "name": "The Empress",
     "description": "Wachstum, Fruchtbarkeit, Schönheit",
+    "description_reversed": "Egoismus, Ungeduld, Überwältigung",
     "image": "/images/resource/The Empress upright.png"
-  },
-  {
-    "name": "The Empress reversed",
-    "description": "Egoismus, Ungeduld, Überwältigung",
-    "image": "/images/resource/The Empress reversed.png"
   },
   {
     "name": "The Emperor",
     "description": "Autorität, Macht, Stabilität",
+    "description_reversed": "Tyrannei, Chaos, Wut",
     "image": "/images/resource/The Emperor upright.png"
-  },
-  {
-    "name": "The Emperor reversed",
-    "description": "Tyrannei, Chaos, Wut",
-    "image": "/images/resource/The Emperor reversed.png"
   },
   {
     "name": "The Hierophant",
     "description": "Tradition, Vertrauen, Weisheit",
+    "description_reversed": "Irrtum, Heuchelei, blinder Glaube",
     "image": "/images/resource/The Hierophant upright.png"
-  },
-  {
-    "name": "The Hierophant reversed",
-    "description": "Irrtum, Heuchelei, blinder Glaube",
-    "image": "/images/resource/The Hierophant reversed.png"
   },
   {
     "name": "The Lovers",
     "description": "Liebe, Leidenschaft, Vereinigung",
+    "description_reversed": "Leiden, Gehorsam, Konflikt",
     "image": "/images/resource/The Lovers upright.png"
-  },
-  {
-    "name": "The Lovers reversed",
-    "description": "Leiden, Gehorsam, Konflikt",
-    "image": "/images/resource/The Lovers reversed.png"
   },
   {
     "name": "The Chariot",
     "description": "Aufbruch, Disziplin, Mut",
+    "description_reversed": "Nachlässigkeit, Arroganz, Fernweh",
     "image": "/images/resource/The Chariot upright.png"
-  },
-  {
-    "name": "The Chariot reversed",
-    "description": "Nachlässigkeit, Arroganz, Fernweh",
-    "image": "/images/resource/The Chariot reversed.png"
   },
   {
     "name": "Strength",
     "description": "Mut, Leidenschaft, Vitalität",
+    "description_reversed": "Kampf, Stolz, Schwäche",
     "image": "/images/resource/Strength upright.png"
-  },
-  {
-    "name": "Strength reversed",
-    "description": "Kampf, Stolz, Schwäche",
-    "image": "/images/resource/Strength reversed.png"
   },
   {
     "name": "The Hermit",
     "description": "Weisheit, Unabhängigkeit, Wachheit",
+    "description_reversed": "Isolation, Resignation, Distanz",
     "image": "/images/resource/The Hermit upright.png"
-  },
-  {
-    "name": "The Hermit reversed",
-    "description": "Isolation, Resignation, Distanz",
-    "image": "/images/resource/The Hermit reversed.png"
   },
   {
     "name": "Wheel of Fortune",
     "description": "Schicksal, Karma, Unvorhersehbarkeit",
+    "description_reversed": "Negative Phase, Pech, mangelnde Kontrolle",
     "image": "/images/resource/Wheel of Fortune upright.png"
-  },
-  {
-    "name": "Wheel of Fortune reversed",
-    "description": "Negative Phase, Pech, mangelnde Kontrolle",
-    "image": "/images/resource/Wheel of Fortune reversed.png"
   },
   {
     "name": "Justice",
     "description": "Urteil, Fairness, Klarheit",
+    "description_reversed": "Unfairness, Schuld, Bestrafung",
     "image": "/images/resource/Justice upright.png"
-  },
-  {
-    "name": "Justice reversed",
-    "description": "Unfairness, Schuld, Bestrafung",
-    "image": "/images/resource/Justice reversed.png"
   },
   {
     "name": "The Hanged Man",
     "description": "Tiefe Einsicht, Veränderung, Loslassen",
+    "description_reversed": "Stillstand, Opfer, mangelnde Kontrolle",
     "image": "/images/resource/The Hanged Man upright.png"
-  },
-  {
-    "name": "The Hanged Man reversed",
-    "description": "Stillstand, Opfer, mangelnde Kontrolle",
-    "image": "/images/resource/The Hanged Man reversed.png"
   },
   {
     "name": "Death",
     "description": "Ende, Loslassen, Neubeginn",
+    "description_reversed": "Stillstand, Festhalten, Trauer",
     "image": "/images/resource/Death upright.png"
-  },
-  {
-    "name": "Death reversed",
-    "description": "Stillstand, Festhalten, Trauer",
-    "image": "/images/resource/Death reversed.png"
   },
   {
     "name": "Temperance",
     "description": "Gleichgewicht, Harmonie, Geduld",
+    "description_reversed": "Ungleichgewicht, Extreme, Zerbrechlich",
     "image": "/images/resource/Temperance upright.png"
-  },
-  {
-    "name": "Temperance reversed",
-    "description": "Ungleichgewicht, Extreme, Zerbrechlich",
-    "image": "/images/resource/Temperance reversed.png"
   },
   {
     "name": "The Devil",
     "description": "Versuchung, Verführung, Materialismus",
+    "description_reversed": "Freiheit, Willensmangel, Groll",
     "image": "/images/resource/The Devil upright.png"
-  },
-  {
-    "name": "The Devil reversed",
-    "description": "Freiheit, Willensmangel, Groll",
-    "image": "/images/resource/The Devil reversed.png"
   },
   {
     "name": "The Tower",
     "description": "Störung, Lebenswandel, Erwachen",
+    "description_reversed": "Zusammenbruch, stürmische Zeiten, Unruhe",
     "image": "/images/resource/The Tower upright.png"
-  },
-  {
-    "name": "The Tower reversed",
-    "description": "Zusammenbruch, stürmische Zeiten, Unruhe",
-    "image": "/images/resource/The Tower reversed.png"
   },
   {
     "name": "The Star",
     "description": "Glaube, Hoffnung, Glück",
+    "description_reversed": "Unsicherheit, Entmutigung, Treulosigkeit",
     "image": "/images/resource/The Star upright.png"
-  },
-  {
-    "name": "The Star reversed",
-    "description": "Unsicherheit, Entmutigung, Treulosigkeit",
-    "image": "/images/resource/The Star reversed.png"
   },
   {
     "name": "The Moon",
     "description": "Geheimnisse, Träume, Vorahnungen",
+    "description_reversed": "Dunkelheit, Ängste, Unsicherheiten",
     "image": "/images/resource/The Moon upright.png"
-  },
-  {
-    "name": "The Moon reversed",
-    "description": "Dunkelheit, Ängste, Unsicherheiten",
-    "image": "/images/resource/The Moon reversed.png"
   },
   {
     "name": "The Sun",
     "description": "Vergnügen, Wiedergeburt, Licht",
+    "description_reversed": "Negativität, Arroganz, Sorglosigkeit",
     "image": "/images/resource/The Sun upright.png"
-  },
-  {
-    "name": "The Sun reversed",
-    "description": "Negativität, Arroganz, Sorglosigkeit",
-    "image": "/images/resource/The Sun reversed.png"
   },
   {
     "name": "Judgement",
     "description": "Befreiung, Erlösung, Erwachen",
-    "image": "/images/resource/The Judgement upright.png"
-  },
-  {
-    "name": "Judgement reversed",
-    "description": "Zweifel, Strafe, Zerstörung",
-    "image": "/images/resource/The Judgement reversed.png"
+    "description_reversed": "Zweifel, Strafe, Zerstörung",
+    "image": "/images/resource/Judgement upright.png"
   },
   {
     "name": "The World",
     "description": "Ankommen, Leben, Spontaneität",
+    "description_reversed": "Unvollständigkeit, Leere, Unschlüssigkeit",
     "image": "/images/resource/The World upright.png"
-  },
-  {
-    "name": "The World reversed",
-    "description": "Unvollständigkeit, Leere, Unschlüssigkeit",
-    "image": "/images/resource/The World reversed.png"
   },
   {
     "name": "Ace of Cups",
     "description": "Gelegenheit, große Liebe, Freude",
+    "description_reversed": "Verpasste Gelegenheit, blockierte Kreativität, emotionaler Verlust",
     "image": "/images/resource/Ace of Cups upright.png"
-  },
-  {
-    "name": "Ace of Cups reversed",
-    "description": "Verpasste Gelegenheit, blockierte Kreativität, emotionaler Verlust",
-    "image": "/images/resource/Ace of Cups reversed.png"
   },
   {
     "name": "Two of Cups",
     "description": "Liebe, Freundschaft, Verbindung",
+    "description_reversed": "Vertrauensprobleme, Ungleichgewicht, Spannungen",
     "image": "/images/resource/Two of Cups upright.png"
-  },
-  {
-    "name": "Two of Cups reversed",
-    "description": "Vertrauensprobleme, Ungleichgewicht, Spannungen",
-    "image": "/images/resource/Two of Cups reversed.png"
   },
   {
     "name": "Three of Cups",
     "description": "Nachwuchs, Glück, Dankbarkeit",
+    "description_reversed": "Gefühl der Distanziertheit, Klatsch und Tratsch, Überdruss",
     "image": "/images/resource/Three of Cups upright.png"
-  },
-  {
-    "name": "Three of Cups reversed",
-    "description": "Gefühl der Distanziertheit, Klatsch und Tratsch, Überdruss",
-    "image": "/images/resource/Three of Cups reversed.png"
   },
   {
     "name": "Four of Cups",
     "description": "Plateau, Langeweile, Trennung",
+    "description_reversed": "Verbittert, wütend, Apathie",
     "image": "/images/resource/Four of Cups upright.png"
-  },
-  {
-    "name": "Four of Cups reversed",
-    "description": "Verbittert, wütend, Apathie",
-    "image": "/images/resource/Four of Cups reversed.png"
   },
   {
     "name": "Five of Cups",
     "description": "Einsicht, Wissen, Traurigkeit",
+    "description_reversed": "Akzeptanz, Frieden finden, Trennung",
     "image": "/images/resource/Five of Cups upright.png"
-  },
-  {
-    "name": "Five of Cups reversed",
-    "description": "Akzeptanz, Frieden finden, Trennung",
-    "image": "/images/resource/Five of Cups reversed.png"
   },
   {
     "name": "Six of Cups",
     "description": "Romantik, Liebe, Nostalgie",
+    "description_reversed": "Unabhängigkeit, Weggehen, Vorwärtskommen",
     "image": "/images/resource/Six of Cups upright.png"
-  },
-  {
-    "name": "Six of Cups reversed",
-    "description": "Unabhängigkeit, Weggehen, Vorwärtskommen",
-    "image": "/images/resource/Six of Cups reversed.png"
   },
   {
     "name": "Seven of Cups",
     "description": "Warnung, Hoffnung, Wahlmöglichkeiten",
+    "description_reversed": "Enttäuschung, Täuschung, falsche Erwartung",
     "image": "/images/resource/Seven of Cups upright.png"
-  },
-  {
-    "name": "Seven of Cups reversed",
-    "description": "Enttäuschung, Täuschung, falsche Erwartung",
-    "image": "/images/resource/Seven of Cups reversed.png"
   },
   {
     "name": "Eight of Cups",
     "description": "Neue Zukunft, Weggehen, Desillusionierung",
+    "description_reversed": "Verlustangst, schlechtes Timing, ungewisse Zukunft",
     "image": "/images/resource/Eight of Cups upright.png"
   },
   {
-    "name": "Eight of Cups reversed",
-    "description": "Verlustangst, schlechtes Timing, ungewisse Zukunft",
-    "image": "/images/resource/Eight of Cups reversed.png"
-  },
-  {
     "name": "Nine of Cups",
-    "description": "Träume, Freude, Glück",
+    "description": "Wunsch erfüllt, Zufriedenheit, Glück",
+    "description_reversed": "Unzufriedenheit, unrealistische Erwartungen, Mangel an Freude",
     "image": "/images/resource/Nine of Cups upright.png"
   },
   {
-    "name": "Nine of Cups reversed",
-    "description": "Trägheit, Übertreibung, Mangel an Freude",
-    "image": "/images/resource/Nine of Cups reversed.png"
-  },
-  {
     "name": "Ten of Cups",
-    "description": "Liebe, Zufriedenheit, Harmonie",
+    "description": "Familienglück, Harmonie, Liebe",
+    "description_reversed": "Zerbrochene Träume, Konflikte, schlechtes Timing",
     "image": "/images/resource/Ten of Cups upright.png"
   },
   {
-    "name": "Ten of Cups reversed",
-    "description": "Gefühl der Vernachlässigung, schlechtes Timing, zerbrochene Träume",
-    "image": "/images/resource/Ten of Cups reversed.png"
-  },
-  {
     "name": "Page of Cups",
-    "description": "Gelegenheiten, Einladungen, Zuneigung",
+    "description": "Neuanfang, Kreativität, Zuneigung",
+    "description_reversed": "Missverständnisse, emotionale Probleme, unreife Liebe",
     "image": "/images/resource/Page of Cups upright.png"
   },
   {
-    "name": "Page of Cups reversed",
-    "description": "Beziehungsprobleme, Überempfindlichkeit, Missverständnisse",
-    "image": "/images/resource/Page of Cups reversed.png"
-  },
-  {
     "name": "Knight of Cups",
-    "description": "Romantik, Verliebtheit, Wohlbefinden",
+    "description": "Romantik, Verführung, Idealismus",
+    "description_reversed": "Leere Versprechen, Launenhaftigkeit, Fantasie",
     "image": "/images/resource/Knight of Cups upright.png"
   },
   {
-    "name": "Knight of Cups reversed",
-    "description": "Leere Versprechen, Launenhaftigkeit, Fantasie",
-    "image": "/images/resource/Knight of Cups reversed.png"
-  },
-  {
     "name": "Queen of Cups",
-    "description": "Einfühlungsvermögen, Aufopferung, Geduld",
+    "description": "Einfühlungsvermögen, Intuition, Geduld",
+    "description_reversed": "Mystik, Unsicherheit, emotionale Manipulation",
     "image": "/images/resource/Queen of Cups upright.png"
   },
   {
-    "name": "Queen of Cups reversed",
-    "description": "Mystik, Dunkelheit, Verunsicherung",
-    "image": "/images/resource/Queen of Cups reversed.png"
-  },
-  {
     "name": "King of Cups",
-    "description": "Intensive Liebe, Psychische Energie, Gleichgewicht",
+    "description": "Emotionale Stabilität, Mitgefühl, Diplomatie",
+    "description_reversed": "Kälte, Spott, Warnung vor emotionaler Manipulation",
     "image": "/images/resource/King of Cups upright.png"
   },
   {
-    "name": "King of Cups reversed",
-    "description": "Kälte, Spott, Warnung",
-    "image": "/images/resource/King of Cups reversed.png"
-  },
-  {
     "name": "Ace of Wands",
-    "description": "Mut, Sehnsucht, Positivität",
+    "description": "Neuanfang, Inspiration, Kreativität",
+    "description_reversed": "Verpasste Gelegenheiten, Fehlkommunikation, Verzögerung",
     "image": "/images/resource/Ace of Wands upright.png"
   },
   {
-    "name": "Ace of Wands reversed",
-    "description": "Verpasste Gelegenheiten, Fehlkommunikation, Verzögerung",
-    "image": "/images/resource/Ace of Wands reversed.png"
-  },
-  {
     "name": "Two of Wands",
-    "description": "Pläne, Reisen, neue Ideen",
+    "description": "Planung, Visionen, Entdeckung neuer Möglichkeiten",
+    "description_reversed": "Gleichgültigkeit, Lustlosigkeit, innerer Zwiespalt",
     "image": "/images/resource/Two of Wands upright.png"
-  },
-  {
-    "name": "Two of Wands reversed",
-    "description": "Gleichgültigkeit, Lustlosigkeit, innerer Zwiespalt",
-    "image": "/images/resource/Two of Wands reversed.png"
   },
   {
     "name": "Three of Wands",
     "description": "Nachkommenschaft, Glück, Dankbarkeit",
+    "description_reversed": "Hindernisse, Verzögerungen, Frustration",
     "image": "/images/resource/Three of Wands upright.png"
-  },
-  {
-    "name": "Three of Wands reversed",
-    "description": "Hindernisse, Verzögerungen, Frustration",
-    "image": "/images/resource/Three of Wands reversed.png"
   },
   {
     "name": "Four of Wands",
     "description": "Frieden, Glück, Harmonie",
+    "description_reversed": "Verzögerungen, Ausschweifungen, Vergänglichkeit",
     "image": "/images/resource/Four of Wands upright.png"
-  },
-  {
-    "name": "Four of Wands reversed",
-    "description": "Verzögerungen, Ausschweifungen, Vergänglichkeit",
-    "image": "/images/resource/Four of Wands reversed.png"
   },
   {
     "name": "Five of Wands",
     "description": "Stärke, Wettbewerb, Konflikt",
+    "description_reversed": "Bitterer Wettbewerb, kranker Ehrgeiz, Unglaubwürdigkeit",
     "image": "/images/resource/Five of Wands upright.png"
-  },
-  {
-    "name": "Five of Wands reversed",
-    "description": "Bitterer Wettbewerb, kranker Ehrgeiz, Unglaubwürdigkeit",
-    "image": "/images/resource/Five of Wands reversed.png"
   },
   {
     "name": "Six of Wands",
     "description": "Sieg, Erfolg, Frohe Botschaft",
+    "description_reversed": "Verzögerung, Bestrafung, übermäßiger Stolz",
     "image": "/images/resource/Six of Wands upright.png"
-  },
-  {
-    "name": "Six of Wands reversed",
-    "description": "Verzögerung, Bestrafung, übermäßiger Stolz",
-    "image": "/images/resource/Six of Wands reversed.png"
   },
   {
     "name": "Seven of Wands",
     "description": "Sieg, Hoffnung, Verteidigung",
+    "description_reversed": "Aufgeben, Wettbewerb, Bedrohung",
     "image": "/images/resource/Seven of Wands upright.png"
-  },
-  {
-    "name": "Seven of Wands reversed",
-    "description": "Aufgeben, Wettbewerb, Bedrohung",
-    "image": "/images/resource/Seven of Wands reversed.png"
   },
   {
     "name": "Eight of Wands",
     "description": "Reisen, Bewegung, Kommunikation",
+    "description_reversed": "Ungewissheit, Misskommunikation, Frustration",
     "image": "/images/resource/Eight of Wands upright.png"
-  },
-  {
-    "name": "Eight of Wands reversed",
-    "description": "Ungewissheit, Misskommunikation, Frustration",
-    "image": "/images/resource/Eight of Wands reversed.png"
   },
   {
     "name": "Nine of Wands",
     "description": "Abgrenzung, Anerkennung, Stärke",
+    "description_reversed": "Abneigung, Engstirnigkeit, Widerstand",
     "image": "/images/resource/Nine of Wands upright.png"
   },
-  {
-    "name": "Nine of Wands reversed",
-    "description": "Abneigung, Engstirnigkeit, Widerstand",
-    "image": "/images/resource/Nine of Wands reversed.png"
-  },
+
   {
     "name": "Ten of Wands",
     "description": "Perspektivlosigkeit, Belastung, Leistung",
+    "description_reversed": "Überforderung, Stress, Mangel an Energie",
     "image": "/images/resource/Ten of Wands upright.png"
-  },
-  {
-    "name": "Ten of Wands reversed",
-    "description": "Burn Out, Druck, Überwältigt",
-    "image": "/images/resource/Ten of Wands reversed.png"
   },
   {
     "name": "Page of Wands",
     "description": "Abenteuer, Chance, Wachstum",
+    "description_reversed": "Verwirrung, Missverständnisse, Konflikt",
     "image": "/images/resource/Page of Wands upright.png"
-  },
-  {
-    "name": "Page of Wands reversed",
-    "description": "Verwirrung, Missverständnisse, Konflikt",
-    "image": "/images/resource/Page of Wands reversed.png"
   },
   {
     "name": "Knight of Wands",
     "description": "Feurige Liebe, Selbstvertrauen, Motivation",
+    "description_reversed": "Ungeduld, Wut, Streit",
     "image": "/images/resource/Knight of Wands upright.png"
-  },
-  {
-    "name": "Knight of Wands reversed",
-    "description": "Ungeduld, Wut, Streit",
-    "image": "/images/resource/Knight of Wands reversed.png"
   },
   {
     "name": "Queen of Wands",
     "description": "Stolz, Weiblichkeit, Selbstvertrauen",
+    "description_reversed": "Aggressivität, Egoismus, Verunsicherung",
     "image": "/images/resource/Queen of Wands upright.png"
-  },
-  {
-    "name": "Queen of Wands reversed",
-    "description": "Aggressivität, Egoismus, Verunsicherung",
-    "image": "/images/resource/Queen of Wands reversed.png"
   },
   {
     "name": "King of Wands",
     "description": "Sicherheit, Wärme, Stärke",
+    "description_reversed": "Arroganz, Narzissmus, Impulsivität",
     "image": "/images/resource/King of Wands upright.png"
-  },
-  {
-    "name": "King of Wands reversed",
-    "description": "Arroganz, Narzissmus, Impulsivität",
-    "image": "/images/resource/King of Wands reversed.png"
   },
   {
     "name": "Ace of Pentacles",
     "description": "Glück, Freude, Neuanfang",
+    "description_reversed": "Verpasste Gelegenheit, Finanzprobleme, Fehlinvestition",
     "image": "/images/resource/Ace of Pentacles upright.png"
-  },
-  {
-    "name": "Ace of Pentacles reversed",
-    "description": "Verpasste Gelegenheit, Finanzprobleme, Fehlinvestition",
-    "image": "/images/resource/Ace of Pentacles reversed.png"
   },
   {
     "name": "Two of Pentacles",
     "description": "Anpassung, Leichtigkeit, Prioritäten",
+    "description_reversed": "Verlust des Gleichgewichts, Unorganisiertheit, Sorglosigkeit",
     "image": "/images/resource/Two of Pentacles upright.png"
-  },
-  {
-    "name": "Two of Pentacles reversed",
-    "description": "Verlust des Gleichgewichts, Unorganisiertheit, Sorglosigkeit",
-    "image": "/images/resource/Two of Pentacles reversed.png"
   },
   {
     "name": "Three of Pentacles",
     "description": "Fertigstellung, Teamarbeit, gute Ergebnisse",
+    "description_reversed": "Unerledigte Angelegenheiten, Frustration, Verzögerung",
     "image": "/images/resource/Three of Pentacles upright.png"
-  },
-  {
-    "name": "Three of Pentacles reversed",
-    "description": "Unerledigte Angelegenheiten, Frustration, Verzögerung",
-    "image": "/images/resource/Three of Pentacles reversed.png"
   },
   {
     "name": "Four of Pentacles",
     "description": "Sicherheit, Begrenzung, Bewahrung",
+    "description_reversed": "Kontrolle, Stillstand, Gier",
     "image": "/images/resource/Four of Pentacles upright.png"
-  },
-  {
-    "name": "Four of Pentacles reversed",
-    "description": "Kontrolle, Stillstand, Gier",
-    "image": "/images/resource/Four of Pentacles reversed.png"
   },
   {
     "name": "Five of Pentacles",
     "description": "Armut, Verlustangst, Isolation",
+    "description_reversed": "Erholung, Not, Krise",
     "image": "/images/resource/Five of Pentacles upright.png"
-  },
-  {
-    "name": "Five of Pentacles reversed",
-    "description": "Erholung, Not, Krise",
-    "image": "/images/resource/Five of Pentacles reversed.png"
   },
   {
     "name": "Six of Pentacles",
     "description": "Toleranz, Großzügigkeit, Hilfsbereitschaft",
+    "description_reversed": "Geiz, Fesselung, Dominanz",
     "image": "/images/resource/Six of Pentacles upright.png"
-  },
-  {
-    "name": "Six of Pentacles reversed",
-    "description": "Geiz, Fesselung, Dominanz",
-    "image": "/images/resource/Six of Pentacles reversed.png"
   },
   {
     "name": "Seven of Pentacles",
     "description": "Freude, positive Ergebnisse, Geduld",
+    "description_reversed": "Ungeduld, Zweifel, Desillusionierung",
     "image": "/images/resource/Seven of Pentacles upright.png"
-  },
-  {
-    "name": "Seven of Pentacles reversed",
-    "description": "Ungeduld, Zweifel, Desillusionierung",
-    "image": "/images/resource/Seven of Pentacles reversed.png"
   },
   {
     "name": "Eight of Pentacles",
     "description": "Lernen, harte Arbeit, Anfang",
+    "description_reversed": "Unerfahrenheit, Unwissenheit, sich überlastet fühlen",
     "image": "/images/resource/Eight of Pentacles upright.png"
-  },
-  {
-    "name": "Eight of Pentacles reversed",
-    "description": "Unerfahrenheit, Unwissenheit, sich überlastet fühlen",
-    "image": "/images/resource/Eight of Pentacles reversed.png"
   },
   {
     "name": "Nine of Pentacles",
     "description": "Erfolg, große Liebe, Belohnungen",
+    "description_reversed": "Übermäßige Ausgaben, Materialismus, finanzielle Unsicherheit",
     "image": "/images/resource/Nine of Pentacles upright.png"
-  },
-  {
-    "name": "Nine of Pentacles reversed",
-    "description": "Übermäßige Ausgaben, Materialismus, finanzielle Unsicherheit",
-    "image": "/images/resource/Nine of Pentacles reversed.png"
   },
   {
     "name": "Ten of Pentacles",
     "description": "Sorglosigkeit, Harmonie, Glückliche Liebe",
+    "description_reversed": "Mangelnde Stabilität, Geldprobleme, Fehlkommunikation",
     "image": "/images/resource/Ten of Pentacles upright.png"
-  },
-  {
-    "name": "Ten of Pentacles reversed",
-    "description": "Mangelnde Stabilität, Geldprobleme, Fehlkommunikation",
-    "image": "/images/resource/Ten of Pentacles reversed.png"
   },
   {
     "name": "Page of Pentacles",
     "description": "Ehrgeiz, Fleiß, Sehnsucht",
+    "description_reversed": "Verpasste Gelegenheiten, Faulheit, Gier",
     "image": "/images/resource/Page of Pentacles upright.png"
-  },
-  {
-    "name": "Page of Pentacles reversed",
-    "description": "Verpasste Gelegenheiten, Faulheit, Gier",
-    "image": "/images/resource/Page of Pentacles reversed.png"
   },
   {
     "name": "Knight of Pentacles",
     "description": "Stabilität, Beharrlichkeit, Sicherheit",
+    "description_reversed": "Dummheit, Übertreibung, mögliche Unehrlichkeit",
     "image": "/images/resource/Knight of Pentacles upright.png"
-  },
-  {
-    "name": "Knight of Pentacles reversed",
-    "description": "Dummheit, Übertreibung, mögliche Unehrlichkeit",
-    "image": "/images/resource/Knight of Pentacles reversed.png"
   },
   {
     "name": "Queen of Pentacles",
     "description": "Weiblichkeit, Fruchtbarkeit, Sinnlichkeit",
+    "description_reversed": "Gleichgültigkeit, Enttäuschung, finanzielle Probleme",
     "image": "/images/resource/Queen of Pentacles upright.png"
-  },
-  {
-    "name": "Queen of Pentacles reversed",
-    "description": "Gleichgültigkeit, Enttäuschung, finanzielle Probleme",
-    "image": "/images/resource/Queen of Pentacles reversed.png"
   },
   {
     "name": "King of Pentacles",
     "description": "Harte Arbeit, Wille zum Erfolg, Überfluss",
+    "description_reversed": "Nachsicht, Übermaß, Gier",
     "image": "/images/resource/King of Pentacles upright.png"
-  },
-  {
-    "name": "King of Pentacles reversed",
-    "description": "Nachsicht, Übermaß, Gier",
-    "image": "/images/resource/King of Pentacles reversed.png"
   },
   {
     "name": "Ace of Swords",
     "description": "Vernunft, erhellend, scharfer Verstand",
+    "description_reversed": "Trennung, schwierige Zeiten, Verwirrung",
     "image": "/images/resource/Ace of Swords upright.png"
-  },
-  {
-    "name": "Ace of Swords reversed",
-    "description": "Trennung, schwierige Zeiten, Verwirrung",
-    "image": "/images/resource/Ace of Swords reversed.png"
   },
   {
     "name": "Two of Swords",
     "description": "Unentschlossenheit, Lösungen, Schwierigkeiten",
+    "description_reversed": "Zerrissenheit, Skepsis, Negativer Geist",
     "image": "/images/resource/Two of Swords upright.png"
-  },
-  {
-    "name": "Two of Swords reversed",
-    "description": "Zerrissenheit, Skepsis, Negativer Geist",
-    "image": "/images/resource/Two of Swords reversed.png"
   },
   {
     "name": "Three of Swords",
     "description": "Ausweg, Befreiung, Herzschmerz",
+    "description_reversed": "Beleidigung, Betrug, schmerzhafte Erfahrung",
     "image": "/images/resource/Three of Swords upright.png"
-  },
-  {
-    "name": "Three of Swords reversed",
-    "description": "Beleidigung, Betrug, schmerzhafte Erfahrung",
-    "image": "/images/resource/Three of Swords reversed.png"
   },
   {
     "name": "Four of Swords",
     "description": "Ruhe, Entspannung, geduldig sein",
+    "description_reversed": "Stillstand, Schwierigkeiten, Ausgrenzung",
     "image": "/images/resource/Four of Swords upright.png"
-  },
-  {
-    "name": "Four of Swords reversed",
-    "description": "Stillstand, Schwierigkeiten, Ausgrenzung",
-    "image": "/images/resource/Four of Swords reversed.png"
   },
   {
     "name": "Five of Swords",
     "description": "Unbesiegbar, Hinterhältigkeit, Niederlage",
+    "description_reversed": "Hass, Machtkampf, Überfall",
     "image": "/images/resource/Five of Swords upright.png"
-  },
-  {
-    "name": "Five of Swords reversed",
-    "description": "Hass, Machtkampf, Überfall",
-    "image": "/images/resource/Five of Swords reversed.png"
   },
   {
     "name": "Six of Swords",
     "description": "Neubeginn, Veränderung, neue Liebe",
+    "description_reversed": "Ängste, Sorgen, Abschied",
     "image": "/images/resource/Six of Swords upright.png"
-  },
-  {
-    "name": "Six of Swords reversed",
-    "description": "Ängste, Sorgen, Abschied",
-    "image": "/images/resource/Six of Swords reversed.png"
   },
   {
     "name": "Seven of Swords",
     "description": "Scharfsinn, Intelligenz, Unsicherheit",
+    "description_reversed": "Hass, Bösartigkeit, Umdenken",
     "image": "/images/resource/Seven of Swords upright.png"
-  },
-  {
-    "name": "Seven of Swords reversed",
-    "description": "Hass, Bösartigkeit, Umdenken",
-    "image": "/images/resource/Seven of Swords reversed.png"
   },
   {
     "name": "Eight of Swords",
     "description": "Überdenken, Selbstkritik, Verstrickung",
+    "description_reversed": "Hemmungen, versteckte Persönlichkeit, Platzmangel",
     "image": "/images/resource/Eight of Swords upright.png"
-  },
-  {
-    "name": "Eight of Swords reversed",
-    "description": "Hemmungen, versteckte Persönlichkeit, Platzmangel",
-    "image": "/images/resource/Eight of Swords reversed.png"
   },
   {
     "name": "Nine of Swords",
     "description": "Stress, Ängstlichkeit, Hoffnungslosigkeit",
+    "description_reversed": "Hoffnung, Verzweiflung, Verlustangst",
     "image": "/images/resource/Nine of Swords upright.png"
-  },
-  {
-    "name": "Nine of Swords reversed",
-    "description": "Hoffnung, Verzweiflung, Verlustangst",
-    "image": "/images/resource/Nine of Swords reversed.png"
   },
   {
     "name": "Ten of Swords",
     "description": "Plötzliches Ende, Scheitern, Hinterhältigkeit",
+    "description_reversed": "Unvermeidliches Ende, intellektuelle Tyrannei, abrupter Schluss",
     "image": "/images/resource/Ten of Swords upright.png"
-  },
-  {
-    "name": "Ten of Swords reversed",
-    "description": "Unvermeidliches Ende, intellektuelle Tyrannei, abrupter Schluss",
-    "image": "/images/resource/Ten of Swords reversed.png"
   },
   {
     "name": "Page of Swords",
     "description": "Klarer Verstand, neue Erfahrungen, Abenteuer",
+    "description_reversed": "Zwietracht, Konflikte, Taktlosigkeit",
     "image": "/images/resource/Page of Swords upright.png"
-  },
-  {
-    "name": "Page of Swords reversed",
-    "description": "Zwietracht, Konflikte, Taktlosigkeit",
-    "image": "/images/resource/Page of Swords reversed.png"
   },
   {
     "name": "Knight of Swords",
     "description": "Ehrlichkeit, Opposition, Konflikt",
+    "description_reversed": "Bosheit, Zynismus, Spott",
     "image": "/images/resource/Knight of Swords upright.png"
-  },
-  {
-    "name": "Knight of Swords reversed",
-    "description": "Bosheit, Zynismus, Spott",
-    "image": "/images/resource/Knight of Swords reversed.png"
   },
   {
     "name": "Queen of Swords",
     "description": "Zuversicht, Lernbereitschaft, Gleichheit",
+    "description_reversed": "Zynismus, Distanz, Scharfzüngigkeit",
     "image": "/images/resource/Queen of Swords upright.png"
-  },
-  {
-    "name": "Queen of Swords reversed",
-    "description": "Zynisch, Distanz, Scharfzüngigkeit",
-    "image": "/images/resource/Queen of Swords reversed.png"
   },
   {
     "name": "King of Swords",
     "description": "Intelligenz, Kluger Verstand, Problemlöser",
+    "description_reversed": "Heimlichtuerei, Ironie, Zynismus",
     "image": "/images/resource/King of Swords upright.png"
-  },
-  {
-    "name": "King of Swords reversed",
-    "description": "Heimlichtuerei, Ironie, Zynismus",
-    "image": "/images/resource/King of Swords reversed.png"
   }
 ]

@@ -19,7 +19,7 @@ public class TarotDeck {
 
     private void loadDeckfromJson(){
         ObjectMapper mapper = new ObjectMapper();
-        try (InputStream is = getClass().getClassLoader().getResourceAsStream("tarot_deck.json"))
+        try (InputStream is = getClass().getClassLoader().getResourceAsStream("tarot_cards.json"))
         {
             cards = mapper.readValue(is, new TypeReference<List<TarotCard>>() {});
         } catch (Exception e) {
@@ -30,7 +30,27 @@ public class TarotDeck {
 
     public void shuffle() {
         Collections.shuffle(cards);
+        Random random = new Random();
+        for (TarotCard card : cards){
+            card.setReserved(random.nextBoolean());
+        }
     }
+
+
+    public TarotCard drawCard() {
+        if (cards.isEmpty()) {
+            resetDeck();
+        }
+        TarotCard drawn = cards.remove(0);
+        drawnCards.add(drawn);
+        return drawn;
+    }
+    public void resetDeck() {
+        cards.addAll(drawnCards);
+        drawnCards.clear();
+        shuffle();
+    }
+
     public List<TarotCard> drawSpread(int count) {
         return new ArrayList<>(cards.subList(0, 3));
     }

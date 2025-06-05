@@ -18,6 +18,8 @@ public class MainController {
     @FXML public ImageView card1Image, card2Image, card3Image;
     @FXML public Button modeBtn, shuffleBtn, openBtn, helpBtn;
 
+    private boolean isMaximized = false;
+
     public TarotDeck tarotDeck;
     public ReadingMode currentMode;
     public List<TarotCard> currentSpread;
@@ -73,9 +75,22 @@ public class MainController {
     }
 
     public void displayCard(ImageView imageView, Label meaningLabel, TarotCard card) {
-        Image image = new Image(getClass().getResourceAsStream(card.getImagePath()));
-        imageView.setImage(image);
-        meaningLabel.setText(card.getName() + ": " + card.getMeaning());
+        try {
+            Image image = new Image(getClass().getResourceAsStream(card.getImagePath()));
+            imageView.setImage(image);
+            if (card.getReversed()) {
+                imageView.setRotate(180);
+            } else {
+                imageView.setRotate(0);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+
+        meaningLabel.setText(card.getName() +
+                (card.getReversed() ? " (Reversed)" : "") +
+                "\n" + card.getMeaning());
     }
 
     @FXML
@@ -121,5 +136,15 @@ public class MainController {
     }
 
     @FXML
-    public void handleMaximize() {((Stage) maximizeBtn.getScene().getWindow()).setMaximized(true);}
+    public void handleMaximize() {
+        if (isMaximized) {
+            ((Stage) maximizeBtn.getScene().getWindow()).setMaximized(false);
+            ((Stage) maximizeBtn.getScene().getWindow()).setWidth(800);
+            ((Stage) maximizeBtn.getScene().getWindow()).setHeight(600);
+        }
+        else {
+            ((Stage) maximizeBtn.getScene().getWindow()).setMaximized(true);
+        }
+        isMaximized = !isMaximized;
+    }
 }

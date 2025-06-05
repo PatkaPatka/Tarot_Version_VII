@@ -1,16 +1,24 @@
 package model;
 
-import java.util.Collections;
-
 public class TarotCard {
-    private String name;
-    private String Meaning;
-    private String imagePath;
+    public String name;
+    public String description;
+    public String description_reversed;
+    public String image;
+    public boolean isReversed;
 
-    public TarotCard() {}
+    public TarotCard() {isReversed = false;}
 
     // Getters and setters
     public String getName() { return name; }
-    public String getMeaning() {return Meaning; }
-    public String getImagePath() { return imagePath; }
+    public String getMeaning() {return isReversed ? description_reversed : description; }
+    public String getImagePath() { return image; }
+
+    public boolean getReversed(){
+        return isReversed;
+    }
+
+    public void setReserved(boolean reversed) {
+        isReversed = reversed;
+    }
 }

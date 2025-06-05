@@ -7,6 +7,9 @@ module com.example.tarot {
 
     opens com.example.tarot to javafx.fxml;
     exports com.example.tarot;
+
     exports controller to javafx.fxml;
     opens controller to javafx.fxml;
+
+    exports model;
 }
