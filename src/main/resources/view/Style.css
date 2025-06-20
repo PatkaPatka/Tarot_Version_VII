@@ -1,63 +1,134 @@
-.root {-fx-background-color: white; -fx-font-family: 'Times New Roman'}
-
-.window-controls{
-    -fx-alignment: center-left;
-    -fx-padding: 5;
-    -fx-spacing: 5;
+.root {
+    -fx-font-family: 'Arial';
+    -fx-base: #f0f0f0;
+    -fx-padding: 0;
 }
 
-.main-content{
-    -fx-alignment: center;
+.title-bar {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+}
+
+.title-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 10;
+}
+
+.main-content {
     -fx-padding: 20;
     -fx-spacing: 20;
-}
-
-.mode-display{
     -fx-alignment: center;
-    -fx-spacing: 50;
 }
 
-.mode-label{
-    -fx-text-fill: #d83f87;
-    -fx-font-size: 18px;
-    -fx-font-weight: bold;
-}
-
-.card-display{
+.mode-display {
     -fx-alignment: center;
     -fx-spacing: 20;
 }
 
-.card-slot{
+.card-slot {
     -fx-alignment: center;
     -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-min-width: 180px;
 }
 
-.card-image{
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
-    -fx-max-width: 150;
-    -fx-max-height: 200;
+.mode-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
 }
 
-.meaning-label{
-    -fx-text-fill: #a4b3b6;
+.card-image {
+    -fx-fit-width: 120;
+    -fx-fit-height: 190;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 1);
+}
+
+.meaning-label {
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
     -fx-wrap-text: true;
-    -fx-max-width: 200;
-    -fx-alignment: center;
+    -fx-max-width: 180px;
+    -fx-padding: 5;
 }
 
-.controls{
+.action-buttons {
+    -fx-padding: 10;
     -fx-alignment: center;
-    -fx-spacing: 15;
+    -fx-spacing: 20;
 }
 
-.control-btn{
-    -fx-background-color: #d83f87;
+.control-btn {
+    -fx-font-size: 12px;
+    -fx-padding: 8 15;
+    -fx-background-color: black;
     -fx-text-fill: white;
-    -fx-padding: 10 20;
+    -fx-min-width: 100px;
+}
+
+.control-btn:hover {
+    -fx-background-color: #333333;
+}
+
+.help-container {
+    -fx-spacing: 0;
+}
+
+.help-toggle-bar {
+    -fx-background-color: #ecf0f1;
+    -fx-padding: 5;
+}
+
+.help-toggle-btn {
+    -fx-font-size: 12px;
+    -fx-padding: 5 10;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.help-toggle-btn:hover {
+    -fx-background-color: #333333;
+}
+
+.help-panel {
+    -fx-background-color: #ecf0f1;
+}
+
+.help-content {
+    -fx-padding: 15;
+}
+
+.help-title {
+    -fx-font-size: 16px;
     -fx-font-weight: bold;
 }
 
-.control-btn:hover{
-    -fx-background-color: #e98074;
+.help-text {
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* Responsive styles */
+.maximized .card-image {
+    -fx-fit-width: 150;
+    -fx-fit-height: 240;
+}
+
+.maximized .mode-label {
+    -fx-font-size: 16px;
+}
+
+.maximized .meaning-label {
+    -fx-font-size: 14px;
+    -fx-max-width: 220px;
+}
+
+.maximized .control-btn {
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-min-width: 120px;
 }

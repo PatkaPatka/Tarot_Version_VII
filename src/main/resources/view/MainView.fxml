@@ -1,60 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
-<?import javafx.scene.shape.*?>
-
-<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
-<!--            xmlns:fx="http://javafx.com/fxml"-->
-<!--            fx:controller="view.MainView"-->
-<!--            prefHeight="400.0" prefWidth="600.0">-->
-
-<!--</AnchorPane>-->
-
 <?import java.net.URL?>
-<?import javafx.scene.shape.Circle?>
-<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.MainController" fx:id="rootPane">
     <stylesheets>
         <URL value="@Style.css"/>
     </stylesheets>
 
-    <HBox styleClass="window-controls">
-        <Circle fx:id="closeBtn" fill="red" radius="10.0" onMouseClicked="#handleClose"/>
-        <Circle fx:id="minimizeBtn" fill="yellow" radius="10.0" onMouseClicked="#handleMinimize"/>
-        <Circle fx:id="maximizeBtn" fill="green" radius="10.0" onMouseClicked="#handleMaximize"/>
-    </HBox>
+    <top>
+        <HBox fx:id="titleBar" styleClass="title-bar">
+            <Label text="Tarot Reading App" styleClass="title-label"/>
+            <Region HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </top>
 
-    <VBox styleClass="main-content">
-        <HBox styleClass="mode-display">
-            <Label fx:id="time1Label" text="mode I" styleClass="mode-label"/>
-            <Label fx:id="time2Label" text="mode II" styleClass="mode-label"/>
-            <Label fx:id="time3Label" text="mode III" styleClass="mode-label"/>
-        </HBox>
-        <HBox styleClass="card-display">
-            <VBox styleClass="card-slot">
-                <ImageView fx:id="card1Image" styleClass="card-image"/>
-                <Label fx:id="meaning1Label" styleClass="meaning-label"/>
-            </VBox>
-            <VBox styleClass="card-slot">
-                <ImageView fx:id="card2Image" styleClass="card-image"/>
-                <Label fx:id="meaning2Label" styleClass="meaning-label"/>
-            </VBox>
-            <VBox styleClass="card-slot">
-                <ImageView fx:id="card3Image" styleClass="card-image"/>
-                <Label fx:id="meaning3Label" styleClass="meaning-label"/>
-            </VBox>
-        </HBox>
+    <center>
+        <SplitPane fx:id="mainSplit" orientation="HORIZONTAL" dividerPositions="0.8">
+            <items>
+                <VBox styleClass="main-content" spacing="15">
+                    <HBox styleClass="mode-display" alignment="CENTER" spacing="20">
+                        <VBox alignment="CENTER" spacing="5" styleClass="card-slot">
+                            <Label fx:id="time1Label" text="Past" styleClass="mode-label"/>
+                            <ImageView fx:id="card1Image" styleClass="card-image"/>
+                            <Label fx:id="meaning1Label" styleClass="meaning-label" wrapText="true"/>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="5" styleClass="card-slot">
+                            <Label fx:id="time2Label" text="Present" styleClass="mode-label"/>
+                            <ImageView fx:id="card2Image" styleClass="card-image"/>
+                            <Label fx:id="meaning2Label" styleClass="meaning-label" wrapText="true"/>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="5" styleClass="card-slot">
+                            <Label fx:id="time3Label" text="Future" styleClass="mode-label"/>
+                            <ImageView fx:id="card3Image" styleClass="card-image"/>
+                            <Label fx:id="meaning3Label" styleClass="meaning-label" wrapText="true"/>
+                        </VBox>
+                    </HBox>
 
-        <HBox styleClass="controls">
-            <Button fx:id="modeBtn" text="mode" onAction="#handleModeChange" styleClass="control-btn"/>
-            <Button fx:id="shuffleBtn" text="shuffle" onAction="#handleShuffle" styleClass="control-btn"/>
-            <Button fx:id="openBtn" text="open" onAction="#handleOpen" styleClass="control-btn"/>
-            <Button fx:id="helpBtn" text="How to Play" onAction="#showHelp" styleClass="control-btn"/>
-        </HBox>
-    </VBox>
-</VBox>
+                    <HBox styleClass="action-buttons" alignment="CENTER" spacing="10">
+                        <Button fx:id="modeBtn" text="Change Mode" onAction="#handleModeChange" styleClass="control-btn"/>
+                        <Button fx:id="shuffleBtn" text="Shuffle" onAction="#handleShuffle" styleClass="control-btn"/>
+                        <Button fx:id="openBtn" text="Open" onAction="#handleOpen" styleClass="control-btn"/>
+                    </HBox>
+                </VBox>
+
+                <VBox styleClass="help-container">
+                    <HBox styleClass="help-toggle-bar" alignment="CENTER_RIGHT">
+                        <Button fx:id="toggleHelpBtn" text="Help" onAction="#toggleHelp" styleClass="help-toggle-btn"/>
+                    </HBox>
+                    <ScrollPane fx:id="helpPanel" styleClass="help-panel">
+                        <VBox spacing="10" styleClass="help-content">
+                            <Label text="How to Play" styleClass="help-title"/>
+                            <TextArea fx:id="helpText" editable="false" wrapText="true" styleClass="help-text"/>
+                        </VBox>
+                    </ScrollPane>
+                </VBox>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>
