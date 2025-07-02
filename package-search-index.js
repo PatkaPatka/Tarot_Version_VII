@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.tarot","l":"com.example.tarot"},{"m":"com.example.tarot","l":"controller"},{"m":"com.example.tarot","l":"model"}];updateSearchResults();
