@@ -24,7 +24,7 @@
             <items>
                 <VBox styleClass="main-content" spacing="15">
                     <HBox styleClass="mode-display" alignment="CENTER" spacing="20">
-                        <VBox alignment="CENTER" spacing="5" styleClass="card-slot">
+                        <VBox alignment="CENTER" spacing="5" styleClass="card-slot" minHeight="320">
                             <Label fx:id="time1Label" text="Past" styleClass="mode-label"/>
                             <ImageView fx:id="card1Image" styleClass="card-image"/>
                             <Label fx:id="meaning1Label" styleClass="meaning-label" wrapText="true"/>

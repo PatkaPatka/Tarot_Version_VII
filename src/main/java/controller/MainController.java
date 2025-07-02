@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.animation.RotateTransition;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -9,7 +10,16 @@ import model.*;
 import javafx.stage.Stage;
 import javafx.scene.input.MouseEvent;
 import java.util.List;
+import javafx.animation.RotateTransition;
+import javafx.animation.Interpolator;
+import javafx.util.Duration;
+import javafx.scene.transform.Rotate;
 
+/**
+ * Hauptcontroller für die Tarot-Leseanwendung.
+ * Verwaltet die Benutzeroberfläche, die Kartenanzeige und die Interaktion mit dem Tarotdeck.
+ * Verwaltet Moduswechsel, Kartenmischen (basierend auf der berechneten Anzahl der Kartenmischungen) und die Kartenaufdeckungsfunktion.
+ */
 public class MainController {
     @FXML public BorderPane rootPane;
     @FXML public HBox titleBar;
@@ -24,12 +34,14 @@ public class MainController {
     private boolean isHelpVisible = true;
     private double xOffset = 0;
     private double yOffset = 0;
+    private int shuffleCount = 1;
 
     public TarotDeck tarotDeck;
     public ReadingMode currentMode;
     public List<TarotCard> currentSpread;
 
     public void initialize() {
+
         tarotDeck = new TarotDeck();
         currentMode = ReadingMode.past_present_future;
         updateModeLabels();
@@ -109,6 +121,13 @@ public class MainController {
         });
     }
 
+    /**
+     * Aktualisiert die Kartengrößen und Schriftgrößen basierend auf der Fenstergröße.
+     * @param width Breite der Karten
+     * @param height Höhe der Karten
+     * @param labelSize Schriftgröße für die Zeitlabels
+     * @param meaningSize Schriftgröße für die Bedeutungslabels
+     */
     private void updateCardSizes(double width, double height, double labelSize, double meaningSize) {
         card1Image.setFitWidth(width);
         card1Image.setFitHeight(height);
@@ -128,6 +147,12 @@ public class MainController {
         meaning2Label.setStyle(meaningStyle);
         meaning3Label.setStyle(meaningStyle);
     }
+
+    /**
+     * Initialisiert die Kartenbilder mit den Standardparametern.
+     * @param imageView Das ImageView, das die Karte anzeigen soll
+     * @param image Das Bild der Karte
+     */
     private void initializeCard(ImageView imageView, Image image) {
         imageView.setImage(image);
         imageView.setPreserveRatio(true);
@@ -135,6 +160,10 @@ public class MainController {
         imageView.setCache(true);
     }
 
+    /**
+     * Behandelt das Klicken auf die Schaltfläche "Hilfe" und wechselt die Sichtbarkeit des Hilfebereichs.
+     * Wenn der Hilfebereich sichtbar ist, wird er ausgeblendet und umgekehrt.
+     */
     @FXML
     public void toggleHelp() {
         isHelpVisible = !isHelpVisible;
@@ -147,6 +176,10 @@ public class MainController {
         }
     }
 
+    /**
+     * Behandelt das Klicken auf die Schaltfläche "Modus" und wechselt den aktuellen Lesemodus.
+     * Aktualisiert die Labels entsprechend dem neuen Modus.
+     */
     @FXML
     public void handleModeChange() {
         ReadingMode[] modes = ReadingMode.values();
@@ -154,6 +187,10 @@ public class MainController {
         updateModeLabels();
     }
 
+    /**
+     * Aktualisiert die Labels für die Positionen basierend auf dem aktuellen Lesemodus.
+     * Setzt die Texte der Labels für die drei Positionen des aktuellen Modus.
+     */
     public void updateModeLabels() {
         String[] positions = currentMode.getPositions();
         time1Label.setText(positions[0]);
@@ -161,9 +198,32 @@ public class MainController {
         time3Label.setText(positions[2]);
     }
 
+    /**
+     * setzt den Shuffle-Zähler auf die angegebene Anzahl.
+     * @param shuffleCount
+     */
+    public void setShuffleCount(int shuffleCount) {
+        this.shuffleCount = Math.max(1, shuffleCount);
+        System.out.println("Shuffle count set to: " + this.shuffleCount); //Debugging output
+    }
+
+    /**
+     * Behandelt das Klicken auf die Schaltfläche "Shuffle" und führt die Mischeoperation durch.
+     * Setzt das Deck zurück und mischt es die angegebene Anzahl von Malen.
+     * Initialisiert die Kartenbilder mit dem Kartenrückseitenbild und leert die Bedeutungslabels.
+     */
     @FXML
     public void handleShuffle() {
-        tarotDeck.shuffle();
+        System.out.println("Performing " + shuffleCount + " shuffles."); //Debugging output
+
+        //reset the deck before shuffling
+        tarotDeck.resetDeck();
+
+        //perform the personalized number of shuffles
+        for (int i = 0; i < shuffleCount; i++){
+            tarotDeck.shuffle();
+        }
+
         Image cardBack = new Image(getClass().getResourceAsStream("/images/resource/card_back.jpg"));
         initializeCard(card1Image, cardBack);
         initializeCard(card2Image, cardBack);
@@ -173,24 +233,44 @@ public class MainController {
         meaning3Label.setText("");
     }
 
+    /**
+     * Behandelt das Klicken auf die Schaltfläche "Open" und deckt die Karten auf.
+     * Zieht drei Karten aus dem Deck und zeigt sie an.
+     * Führt die Flip-Animation für jede Karte aus und aktualisiert die Bedeutungslabels.
+     */
     @FXML
     public void handleOpen() {
         currentSpread = tarotDeck.drawSpread(3);
-        displayCard(card1Image, meaning1Label, currentSpread.get(0));
-        displayCard(card2Image, meaning2Label, currentSpread.get(1));
-        displayCard(card3Image, meaning3Label, currentSpread.get(2));
+        flipCard(card1Image, meaning1Label, currentSpread.get(0));
+        flipCard(card2Image, meaning2Label, currentSpread.get(1));
+        flipCard(card3Image, meaning3Label, currentSpread.get(2));
     }
 
-    public void displayCard(ImageView imageView, Label meaningLabel, TarotCard card) {
+    /**
+     * Führt die Flip-Animation für die angegebene Karte aus.
+     * @param imageView
+     * @param meaningLabel
+     * @param card
+     */
+    private void flipCard(ImageView imageView, Label meaningLabel, TarotCard card) {
+        // Completes the flip from 90° to 0°
+        RotateTransition flipIn = new RotateTransition(Duration.millis(250), imageView);
+        flipIn.setAxis(Rotate.Y_AXIS);
+        flipIn.setFromAngle(90);
+        flipIn.setToAngle(0);
+        flipIn.setInterpolator(Interpolator.LINEAR);
+
         try {
             Image image = new Image(getClass().getResourceAsStream(card.getImagePath()));
             imageView.setImage(image);
-            imageView.setRotate(card.getReversed() ? 180 : 0);
+            imageView.setScaleY(card.getReversed() ? -1 : 1);
+
+            meaningLabel.setText(card.getName() + (card.getReversed() ? " (Reversed)" : "") +
+                    "\n" + card.getMeaning());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        meaningLabel.setText(card.getName() + (card.getReversed() ? " (Reversed)" : "") +
-                "\n" + card.getMeaning());
+        flipIn.play();
     }
 }
